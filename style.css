@@ -82,8 +82,20 @@ header{
   left: 43px;
   width: 810px;
   height: 100px;
+  animation: header__logo 3s;
 }
 
+@keyframes header__logo {
+  from{
+		left: -100px;
+    opacity: 0;
+	}
+
+	to{
+    left: 43px;
+    opacity: 1;
+	}
+}
 
 /* concep */
 .concep{
@@ -762,6 +774,21 @@ margin-right: 10px;
 
 /* footer */
 footer{
-  width: 1920px;
+  width: 100%;
   height: 400px;
+}
+
+
+@media (max-width: 1440px) {
+  footer,
+  .bg_color {
+    width: 1440px;
+  }
+  
+}
+@media (min-width: 1920px) {
+  footer,
+  .bg_color{
+    width: 1920px;
+  }
 }
